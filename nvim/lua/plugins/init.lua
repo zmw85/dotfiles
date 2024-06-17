@@ -8,6 +8,8 @@ return {
   },
   {
     "christoomey/vim-tmux-navigator", -- tmux & split window navigation
+    enabled = true,
+    event = "VeryLazy",
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",
@@ -16,11 +18,11 @@ return {
       "TmuxNavigatePrevious",
     },
     keys = {
-      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
-      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
-      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
-      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
-      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+      { "<c-h>", "<cmd>TmuxNavigateLeft<cr>", "Navigate Window Left" },
+      { "<c-j>", "<cmd>TmuxNavigatedown<cr>", "navigate Window Down" },
+      { "<c-k>", "<cmd>TmuxNavigateUp<cr>", "navigate Window Up" },
+      { "<c-l>", "<cmd>TmuxNavigateRight<cr>", "navigate Window Right" },
+      { "<c-\\>", "<cmd>TmuxNavigatePrevious<cr>", "navigate Window Previous" },
     },
   },
   -- These are some examples, uncomment them if you want to see them work!
