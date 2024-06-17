@@ -1,0 +1,16 @@
+[user]
+	name = Zhengmin Wang
+	email = jeffwang03@gmail.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	up = rebase
+	ci = commit
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[includeIf "gitdir:~/project/optus/"]
+	path = ~/projects/optus/.gitconfig
+
